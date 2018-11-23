@@ -68,12 +68,12 @@ button2 = Button(text="Update your email", fg="blue")
 button3 = Button(text="Change your password", fg="green")
 button4 = Button(text="Log in", fg="orange", command=log_in_table)
 button5 = Button(text="Delete an account", fg="red", command=delete_an_account)
-
-button1.grid(row=0, sticky=E)
-button2.grid(row=1, sticky=E)
-button3.grid(row=2, sticky=E)
-button4.grid(row=3, sticky=E)
-button5.grid(row=4, sticky=E)
+welcome_label.grid(row=0, sticky=E)
+button1.grid(row=1, sticky=W)
+button2.grid(row=2, sticky=W)
+button3.grid(row=3, sticky=W)
+button4.grid(row=4, sticky=W)
+button5.grid(row=5, sticky=W)
 
 root.mainloop()
 
