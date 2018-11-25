@@ -114,12 +114,12 @@ class CreateAccountPage(tk.Frame):
         label_5 = tk.Label(self, text="Email")
         label_6 = tk.Label(self, text="Country")
 
-        entry_1 = tk.Entry(self, cursor="arrow")
-        entry_2 = tk.Entry(self, cursor="man")
-        entry_3 = tk.Entry(self, cursor="spider")
-        entry_4 = tk.Entry(self, cursor="target", show="*")
-        entry_5 = tk.Entry(self, cursor="star")
-        entry_6 = tk.Entry(self, cursor="heart")
+        entry_1 = tk.Entry(self, cursor="arrow", textvariable=tk.StringVar())
+        entry_2 = tk.Entry(self, cursor="man", textvariable=tk.StringVar())
+        entry_3 = tk.Entry(self, cursor="spider", textvariable=tk.StringVar())
+        entry_4 = tk.Entry(self, cursor="target", show="*", textvariable=tk.StringVar())
+        entry_5 = tk.Entry(self, cursor="star", textvariable=tk.StringVar())
+        entry_6 = tk.Entry(self, cursor="heart", textvariable=tk.StringVar())
 
         label_1.grid(row=0, sticky="e")
         label_2.grid(row=1, sticky="e")
@@ -151,10 +151,10 @@ class UpdateEmailPage(tk.Frame):
         label_3 = tk.Label(self, text="Confirm new email")
         label_4 = tk.Label(self, text="Password")
 
-        entry_1 = tk.Entry(self)
-        entry_2 = tk.Entry(self)
-        entry_3 = tk.Entry(self)
-        entry_4 = tk.Entry(self, show="*")
+        entry_1 = tk.Entry(self, textvariable=tk.StringVar())
+        entry_2 = tk.Entry(self, textvariable=tk.StringVar())
+        entry_3 = tk.Entry(self, textvariable=tk.StringVar())
+        entry_4 = tk.Entry(self, show="*", textvariable=tk.StringVar())
 
         label_1.grid(row=0, sticky="e")
         label_2.grid(row=1, sticky="e")
@@ -179,8 +179,8 @@ class DeleteAccountPage(tk.Frame):
 
         label_1 = tk.Label(self, text="Login")
         label_2 = tk.Label(self, text="Password")
-        entry_1 = tk.Entry(self, cursor="arrow")
-        entry_2 = tk.Entry(self, cursor="arrow", show="*")
+        entry_1 = tk.Entry(self, cursor="arrow", textvariable=tk.StringVar())
+        entry_2 = tk.Entry(self, cursor="arrow", show="*", textvariable=tk.StringVar())
         label_1.grid(row=0, sticky="e")
         label_2.grid(row=1, sticky="e")
         entry_1.grid(row=0, column=1)
@@ -201,10 +201,10 @@ class ChangePasswordPage(tk.Frame):
         label_3 = tk.Label(self, text="New password")
         label_4 = tk.Label(self, text="Confirm new password")
 
-        entry_1 = tk.Entry(self)
-        entry_2 = tk.Entry(self, show="*")
-        entry_3 = tk.Entry(self, show="*")
-        entry_4 = tk.Entry(self, show="*")
+        entry_1 = tk.Entry(self, textvariable=tk.StringVar())
+        entry_2 = tk.Entry(self, show="*", textvariable=tk.StringVar())
+        entry_3 = tk.Entry(self, show="*", textvariable=tk.StringVar())
+        entry_4 = tk.Entry(self, show="*", textvariable=tk.StringVar())
 
         label_1.grid(row=0, sticky="e")
         label_2.grid(row=1, sticky="e")
@@ -229,8 +229,8 @@ class LogInPage(tk.Frame):
         label_1 = tk.Label(self, text="Login")
         label_2 = tk.Label(self, text="Password")
 
-        entry_1 = tk.Entry(self)
-        entry_2 = tk.Entry(self, show="*")
+        entry_1 = tk.Entry(self, textvariable=tk.StringVar())
+        entry_2 = tk.Entry(self, show="*", textvariable=tk.StringVar())
 
         label_1.grid(row=0, sticky="e")
         label_2.grid(row=1, sticky="e")
